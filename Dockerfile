@@ -4,7 +4,7 @@ RUN apt-get update && apt-get install -y git
 
 WORKDIR /app
 COPY . /app
-#COPY alembic alembic
+COPY alembic alembic
 COPY requirements.txt .
 COPY .env_docker .env
 
